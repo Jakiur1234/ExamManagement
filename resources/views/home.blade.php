@@ -3,7 +3,7 @@
     Home
 @endsection
 @section('body-section')
-    <section class="hero-section bg-gray-800 min-h-full mt-16 text-white p-5">
+    <section class="hero-section bg-gray-800 min-h-full mt-16 text-white p-5 w-full">
         <div class="w-full mx-auto grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 p-12 content-center items-center">
             <div>
                 <p class="my-3 text-6xl">
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="details p-5 bg-gray-900 ">
+    <section class="details p-5 bg-gray-900 w-full">
         <div class="grid py-5 lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 mx-auto content-center items-center">
             <div class="text-xl my-3 mx-auto bg-gray-600 text-white text-center rounded-lg p-5 w-2/3">
                 <img src="{{ url('/') }}/images/students.png" alt="" class="mx-auto mb-3 h-20 w-auto">
@@ -44,7 +44,7 @@
         </div>
     </section>
 
-    <section class="services p-5 bg-gray-800">
+    <section class="services p-5 bg-gray-800 w-full">
         <div class="grid py-5  lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mx-auto content-center items-center">
             <div class="p-3 my-5">
                 <img src="{{ url('/') }}/images/services.jpg" alt="Service" class="mx-auto">
@@ -78,15 +78,31 @@
         </div>
     </section>
 
-    <section class="bg-gray-900 px-5 pt-10 pb-10">
+    <section class="bg-gray-900 px-5 pt-10 pb-10 w-full">
         <div class="text-4xl text-center my-10 text-purple-500">
             Our Best Examiners
         </div>
-        <div class="grid grid-cols-3">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-1">
 
-            <x-teacher-card width="w-2/3" imageurl="{{url('/')}}/images/rubina.jpg" background="bg-gray-800" textcolor="text-white" name="Sheikh Rubina" subject="(Computer Scienece And Engineering)" about="For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries." whatsapp="" facebook="" email="" />
-            <x-teacher-card width="w-2/3" imageurl="{{url('/')}}/images/juansingun.jpg" background="bg-gray-800" textcolor="text-white" name="Juan Sing Un" subject="(Computer Scienece And Engineering)" about="For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries." whatsapp="" facebook="" email="" />
-            <x-teacher-card width="w-2/3" imageurl="{{url('/')}}/images/irtiza.jpg" background="bg-gray-800" textcolor="text-white" name="Irtiza Islam" subject="(Computer Scienece And Engineering)" about="For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries." whatsapp="" facebook="" email="" />
+            <x-teacher-card width="w-4/5" imageurl="{{url('/')}}/images/rubina.jpg" background="bg-gray-800" textcolor="text-white" name="Sheikh Rubina" subject="(Computer Scienece And Engineering)" about="“For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries.”" whatsapp="" facebook="" email="" />
+            <x-teacher-card width="w-4/5" imageurl="{{url('/')}}/images/juansingun.jpg" background="bg-gray-800" textcolor="text-white" name="Juan Sing Un" subject="(Computer Scienece And Engineering)" about="“For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries.”" whatsapp="" facebook="" email="" />
+            <x-teacher-card width="w-4/5" imageurl="{{url('/')}}/images/irtiza.jpg" background="bg-gray-800" textcolor="text-white" name="Irtiza Islam" subject="(Computer Scienece And Engineering)" about="“For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservationorganization, WWF works in nearly 100 countries.”" whatsapp="" facebook="" email="" />
+
+        </div>
+    </section>
+
+    <section class="review bg-gray-700 pb-10 pt-10 px-5 w-full">
+        <div class="text-center text-white my-3 p-3 text-4xl">
+            Students Review
+        </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-3">
+
+            <x-student-card imageurl="{{url('/')}}/images/RyanaIslam.jpg" alt="Ryana Islam" text="“We are very glad to admit here. With the help of this exam system i have got cgpa 3.97 out of 4.00 .
+                    Thanks to team BD Examiner.”" name="Ryana Islam" />
+            <x-student-card imageurl="{{url('/')}}/images/JhonKim.jpg" alt="Jhon Kim" text="“We are very glad to admit here. With the help of this exam system i have got cgpa 3.97 out of 4.00 .
+                    Thanks to team BD Examiner.”" name="Jhon Kim" />
+            <x-student-card imageurl="{{url('/')}}/images/AbritaSing.jpg" alt="Abrita Sing" text="“We are very glad to admit here. With the help of this exam system i have got cgpa 3.97 out of 4.00 .
+                    Thanks to team BD Examiner.”" name="Abrita Sing" />
 
         </div>
     </section>
