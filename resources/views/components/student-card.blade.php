@@ -1,5 +1,5 @@
-<div class="flex flex-row justify-between shadow-lg bg-gray-900 w-full items-center rounded-md">
-    <img src="{{$imageurl}}" alt="{{$alt}}" class="h-[150px] rounded-l-md">
+<div class="flex flex-row justify-between shadow-lg bg-gray-900 w-full h-[200px] items-center rounded-md" data-aos="flip-right">
+    <img src="{{$imageurl}}" alt="{{$alt}}" class="h-[200px] rounded-l-md">
     <p class="text-md text-justify p-3 text-white italic">
         {{$text}}
         <br>

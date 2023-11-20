@@ -1,4 +1,4 @@
-<div class="mx-auto {{$width}} shadow-lg {{$textcolor}} p-5 {{$background}} rounded-md">
+<div class="mx-auto {{$width}} shadow-lg {{$textcolor}} p-5 {{$background}} rounded-md" data-aos="zoom-out" data-aos-easing="ease-in-out">
     <div class="text-center mx-auto">
         <img src="{{$imageurl}}" alt="" class="rounded-lg h-[200px] mx-auto">
     </div>

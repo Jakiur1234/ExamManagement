@@ -2,7 +2,7 @@
     <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 lg:px-24 py-32 border-b-[1px] border-gray-500">
         <div class="flex flex-col justify-between mx-auto">
             <div>
-                <img src="{{url('/')}}/images/logo.jpeg" class="h-32">
+                <img src="{{ url('/') }}/images/logo.jpeg" class="h-32 mx-auto">
             </div>
             <div class="py-3">
                 <p class="text-2xl text-purple-400 mb-3">
@@ -19,16 +19,16 @@
                 Links
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/home" class="hover:text-blue-500">Home</a>
+                <a href="{{ url('/') }}/home" class="hover:text-blue-500">Home</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/about" class="hover:text-blue-500">About</a>
+                <a href="{{ url('/') }}/about" class="hover:text-blue-500">About</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/courses" class="hover:text-blue-500">Courses</a>
+                <a href="{{ url('/') }}/courses" class="hover:text-blue-500">Courses</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/contact" class="hover:text-blue-500">Contact</a>
+                <a href="{{ url('/') }}/contact" class="hover:text-blue-500">Contact</a>
             </p>
         </div>
         <div class="flex flex-col">
@@ -36,16 +36,16 @@
                 Solution
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/home" class="hover:text-blue-500">Home</a>
+                <a href="{{ url('/') }}/home" class="hover:text-blue-500">Home</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/about" class="hover:text-blue-500">About</a>
+                <a href="{{ url('/') }}/about" class="hover:text-blue-500">About</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/courses" class="hover:text-blue-500">Courses</a>
+                <a href="{{ url('/') }}/courses" class="hover:text-blue-500">Courses</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/contact" class="hover:text-blue-500">Contact</a>
+                <a href="{{ url('/') }}/contact" class="hover:text-blue-500">Contact</a>
             </p>
         </div>
         <div class="flex flex-col">
@@ -53,23 +53,28 @@
                 Important
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/home" class="hover:text-blue-500">Home</a>
+                <a href="{{ url('/') }}/home" class="hover:text-blue-500">Home</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/about" class="hover:text-blue-500">About</a>
+                <a href="{{ url('/') }}/about" class="hover:text-blue-500">About</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/courses" class="hover:text-blue-500">Courses</a>
+                <a href="{{ url('/') }}/courses" class="hover:text-blue-500">Courses</a>
             </p>
             <p class="text-md mx-auto py-3">
-                <a href="{{url('/')}}/contact" class="hover:text-blue-500">Contact</a>
+                <a href="{{ url('/') }}/contact" class="hover:text-blue-500">Contact</a>
             </p>
         </div>
     </div>
     <div class="text-center text-sm py-3">
-        All rights reserved. Developed By <a href="https://github.com/Jakiur1234">AJDM Jakiur Rahman</a>
+        All rights reserved &copy;{{ date('Y') }}. Developed By <a href="https://github.com/Jakiur1234">AJDM Jakiur
+            Rahman.</a>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 @yield('script')
 </body>
 
