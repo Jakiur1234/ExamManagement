@@ -1,4 +1,4 @@
-<div class="mx-auto {{$width}} shadow-lg {{$textcolor}} p-5 {{$background}} rounded-md" data-aos="zoom-out" data-aos-easing="ease-in-out">
+<div class="mx-auto w-4/5 shadow-lg text-white p-5 bg-gray-800 rounded-md" data-aos="zoom-out">
     <div class="text-center mx-auto">
         <img src="{{$imageurl}}" alt="" class="rounded-lg h-[200px] mx-auto">
     </div>
@@ -13,15 +13,15 @@
     </p>
     <div class="text-center mt-3 grid grid-cols-3 w-full gap-1">
         <div class="bg-purple-500 p-2 rounded-md cursor-pointer"onclick="window.location.href='{{$facebook}}'">
-            <img src="{{ url('/') }}/images/facebook.png" alt="" srcset=""
+            <img src="{{$imageUrl}}/facebook.png" alt="" srcset=""
                 class="h-6 mx-auto">
         </div>
         <div class="bg-purple-500 p-2 rounded-md cursor-pointer"onclick="window.location.href='{{$whatsapp}}'">
-            <img src="{{ url('/') }}/images/whatsapp.png" alt="" srcset=""
+            <img src="{{$imageUrl}}/whatsapp.png" alt="" srcset=""
                 class="h-6 mx-auto">
         </div>
         <div class="bg-purple-500 p-2 rounded-md cursor-pointer"onclick="window.location.href='{{$email}}'">
-            <img src="{{ url('/') }}/images/gmail.png" alt="" srcset="" class="h-6 mx-auto">
+            <img src="{{$imageUrl}}/gmail.png" alt="" srcset="" class="h-6 mx-auto">
         </div>
     </div>
 </div>

@@ -11,12 +11,9 @@ class TeacherCard extends Component
     /**
      * Create a new component instance.
      */
-    public $width,$imageurl,$name,$subject,$about,$facebook,$whatsapp,$email,$background,$textcolor;
+    public $imageurl,$name,$subject,$about,$facebook,$whatsapp,$email;
 
     public function __construct(
-        $width,
-        $background,
-        $textcolor,
         $imageurl,
         $name,
         $subject,
@@ -26,9 +23,6 @@ class TeacherCard extends Component
         $email,
         )
     {
-        $this->width = $width;
-        $this->background = $background;
-        $this->textcolor = $textcolor;
         $this->imageurl = $imageurl;
         $this->name = $name;
         $this->subject = $subject;

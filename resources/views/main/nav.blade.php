@@ -1,6 +1,6 @@
 <nav class="bg-gray-900 p-3 fixed top-0 w-full flex justify-between font-sans border-b-1 border-white z-10 shadow-xl">
     <div class="flex items-center justify-start">
-        <img src="{{ url('/') }}/images/logo.jpeg" class="w-auto h-10">
+        <img src="{{$imageUrl}}/logo.jpeg" class="w-auto h-10">
         <span class="text-white justify-start px-5 py-1 text-2xl cursor-pointer">
             BD Examiner
         </span>
@@ -27,7 +27,7 @@
             </a>
         </li>
         <li class="cursor-pointer text-white px-5 py-2 hover:text-blue-500">
-            <a href="{{ route('contact') }}">
+            <a href="{{route('contact')}}">
                 Contact
             </a>
         </li>

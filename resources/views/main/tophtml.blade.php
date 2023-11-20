@@ -1,5 +1,5 @@
 <!doctype html>
-<html @yield('html-class')>
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -10,4 +10,4 @@
     @yield('style')
 </head>
 
-<body @yield('body-class')>
+<body>
