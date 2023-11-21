@@ -1,25 +1,25 @@
 <div
-    class="coursecard p-5 mx-auto bg-gray-900 h-auto w-11/12 shadow-sm shadow-amber-600 hover:shadow-lg hover:shadow-amber-600 cursor-text" data-aos="flip-left" data-aos-duration="20000">
+    class="coursecard p-5 w-full mx-auto bg-gray-900 h-auto shadow-sm shadow-amber-600 hover:shadow-lg hover:shadow-amber-600 cursor-text" data-aos="flip-left" data-aos-duration="20000">
     <div class="image text-center">
         <img src="{{$imageurl}}" class="mx-auto max-w-full max-h-[200px]">
     </div>
-    <div class="course-title text-2xl text-center font-bold text-white mt-5">
+    <div class="course-title text-lg text-center font-bold text-white mt-2 md:mt-3 md:text-2xl">
         {{ $title }}
     </div>
-    <div class="course-description text-md text-justify text-gray-300 mt-5">
+    <div class="course-description text-sm text-justify text-gray-300 mt-2 md:mt-3 md:text-md">
         {{ $description }}
     </div>
-    <div class="course-instructor text-center text-amber-400 text-lg mt-3 font-semibold">
-        Instructor: <br> {{ $instructor }} {{ $subject }}
+    <div class="course-instructor text-center text-amber-400 text-lg font-semibold mt-1 md:mt-3">
+        Instructor : {{ $instructor }} {{ $subject }}
     </div>
-    <div class="grid  grid-cols-3 items-center bg-gray-800 mt-5 rounded-md">
-        <div class="text-xl text-center text-purple-400 p-3">
+    <div class="grid  grid-cols-3 items-center bg-gray-800 rounded-md mt-2 md:mt-5">
+        <div class="text-md text-center text-purple-400 p-3 md:text-xl">
             Total Exams : {{ $totalexam }}
         </div>
-        <div class="text-2xl text-center text-purple-400 p-3 bg-slate-600">
-            {{ $price }}
+        <div class="text-lg text-center text-purple-400 p-3 bg-slate-600 md:text-2xl">
+            {{ $price }} {{$currency}}
         </div>
-        <div class="text-xl text-center text-purple-400 p-3">
+        <div class="text-md text-center text-purple-400 p-3 md:text-xl">
             For Class : {{ $class }}
         </div>
     </div>

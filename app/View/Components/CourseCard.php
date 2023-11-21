@@ -11,8 +11,8 @@ class CourseCard extends Component
     /**
      * Create a new component instance.
      */
-    public $imageurl,$title,$description,$instructor,$subject,$totalexam,$price,$class;
-    public function __construct($imageurl,$title,$description,$instructor,$totalexam,$subject,$price,$class)
+    public $imageurl,$title,$description,$instructor,$subject,$totalexam,$price,$class,$currency;
+    public function __construct($imageurl,$title,$description,$instructor,$totalexam,$subject,$price,$class,$currency)
     {
         $this->imageurl = $imageurl;
         $this->title = $title;
@@ -22,6 +22,7 @@ class CourseCard extends Component
         $this->totalexam = $totalexam;
         $this->price = $price;
         $this->class = $class;
+        $this->currency = $currency;
     }
 
     /**
