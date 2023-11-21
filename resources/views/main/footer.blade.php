@@ -1,5 +1,7 @@
+{{-- Creating footer --}}
 <footer class="bg-gray-900 px-10 py-10 text-white">
     <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 lg:px-24 py-32 border-b-[1px] border-gray-500">
+        {{-- footer branding --}}
         <div class="flex flex-col justify-between mx-auto">
             <div>
                 <img src="{{$imageUrl}}/logo.jpeg" class="h-32 mx-auto">
@@ -14,6 +16,7 @@
                 </small>
             </div>
         </div>
+        {{--Links in footer--}}
         <div class="flex flex-col">
             <p class="font-bold text-2xl mx-auto">
                 Links
@@ -71,10 +74,12 @@
             Rahman.</a>
     </div>
 </footer>
+{{-- AOS for animation --}}
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
+{{-- Yeild if need any script from the main blade files --}}
 @yield('script')
 </body>
 
