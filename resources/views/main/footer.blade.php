@@ -1,6 +1,6 @@
 {{-- Creating footer --}}
-<footer class="bg-gray-900 px-10 py-10 text-white">
-    <div class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 lg:px-24 py-32 border-b-[1px] border-gray-500">
+<footer class="bg-gray-900 text-white">
+    <div class="grid px-3 grid-cols-2 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 lg:px-24 py-32 border-b-[1px] border-gray-500">
         {{-- footer branding --}}
         <div class="flex flex-col justify-between mx-auto">
             <div>

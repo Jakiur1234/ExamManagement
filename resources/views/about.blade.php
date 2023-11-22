@@ -6,7 +6,7 @@
 @endsection
 @section('body-section')
     <section class="bg-gray-800 mt-16">
-        <div class="container mx-auto p-10">
+        <div class="container mx-auto p-5 md:p-10">
             <div class="text-center text-white mx-auto pt-10 pb-5 underline text-3xl font-semibold font-sans">
                 About Us
             </div>
