@@ -1,5 +1,5 @@
 {{-- Create name field --}}
-@extends('main.main')
+@extends('layout.app')
 {{-- Giving document title --}}
 @section('document-title')
     About

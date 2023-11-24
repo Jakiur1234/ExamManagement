@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\InstructorModel;
 use App\Models\StudentReview;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {

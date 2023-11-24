@@ -1,6 +1,6 @@
 {{-- Extends main file that has all necessary files
     for desing and header footer also --}}
-@extends('main.main')
+@extends('layout.app')
 {{-- Giving document title --}}
 @section('document-title')
     Contact
